@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "ies",
+      "type": "com.usa.ri.gov.ies.properties.AppProperties",
+      "sourceType": "com.usa.ri.gov.ies.properties.AppProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ies.properties",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.usa.ri.gov.ies.properties.AppProperties"
+    }
+  ],
+  "hints": []
+}

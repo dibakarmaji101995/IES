@@ -1,0 +1,35 @@
+#Server port
+server:
+  port: 6060
+#user-define properties  
+ies:
+  properties:
+       message: Welcome to IES-DEV
+       cwRegSuccess: Case Worker Registration Successful
+       cwRegFail: Case Worker Registration Faild
+#DB properties and Hibernate properties configuration
+spring:
+   datasource:
+       driver-class-name: oracle.jdbc.driver.OracleDriver
+       url: jdbc:oracle:thin:@localhost:1521:orcl
+       username: IES_DEV
+       password: IES_DEV
+   jpa:
+       hibernate:
+            ddl-auto: update
+       properties:
+          hibernate:     
+              show_sql: true
+              format_sql: true
+                    
+#Logging properties Configuration       
+logging:
+  file: IES-App-Logs.log
+  level:
+     root: INFO
+     org.springframework.web: DEBUG
+     com.usa.ri.gov.ies.admin.controller: DEBUG 
+     org.hibernate.SQL: DEBUG
+     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+     
+          
